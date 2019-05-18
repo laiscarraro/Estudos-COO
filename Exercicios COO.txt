@@ -1,0 +1,68 @@
+Parte A: Conceitos básicos de COO, Generics, Tratamento de Erros e Exceções, Collections, Ordenação de Objetos
+
+1 - Laís tem muitas roupas, e precisa urgentemente de um meio de organizá-las em seu guarda-roupas. Para isso, decidiu classificá-las em diferentes tipos:
+
+Vestimenta = {
+	Roupa;
+	Calçado;
+	Acessório;
+}
+
+a) Escreva um programa que implemente a estrutura definida por enquanto. Defina pelo menos 3 variáveis e 4 métodos.
+b) Leia o seu programa e comente uma explicação sobre todos os conceitos de Orientação a Objetos que utilizou, por exemplo: se criou uma classe, explique o que é uma classe. Se criou uma interface ou classe abstrata, explique. O mesmo vale para herança, polimorfismo, anotações (isso é de java mesmo), encapsulamento, etc.
+c) Explique quais são os tipos de variáveis e determine seu escopo padrão.
+d) Escreva um exemplo de utilização do programa, instanciando pelo menos um objeto de cada classe criada. Explique o que é uma instância de uma classe e como ela se relaciona com o conceito de classe.
+
+2 - Para que Laís consiga efetivamente organizar suas roupas em algum lugar, decidiu separar algumas caixas para fazer uma organização prévia. Para que a separação seja mais efetiva, decidiu especificar ainda mais seus tipos de roupas:
+
+Vestimenta = {
+	Roupa = {
+		Cima = {
+			Blusa;
+			Casaco;
+		}
+		Baixo = {
+			Calça;
+			Saia;
+		}
+		Tudo = {
+			Vestido;
+		}
+	}
+	Calçado = {
+		Tênis;
+		Sapatilha;
+		Bota;
+		Salto;
+	}
+	Acessório;
+}
+
+Laís deseja separar em 3 caixas todas as suas roupas, tem 2 para seus sapatos e 1 para os acessórios. Laís não se importa se os vestidos ficarem na mesma caixa que as blusas, mas os casacos não podem ficar com as saias. Não há restrições sobre onde suas calças podem ficar. Seus tênis devem ficar longe dos saltos, assim como as sapatilhas. As botas não devem ficar com as sapatilhas. A caixa de acessórios deve aceitar apenas acessórios.
+
+a) Laís percebeu que suas caixas são muito pequenas, e que cada uma delas comporta apenas um item. Implemente uma classe genérica para a caixa, e instancie as caixas especificadas. Elas podem ter apenas o método botarNaCaixa(ITEM).
+b) É muito feia a mensagem que aparece se você colocar um objeto na caixa "errada". Faça o tratameto desse erro e mostre uma mensagem bonitinha para o usuário que cometer esse erro.
+c) O usuário não é obrigado a descobrir o erro que cometeu. Especifique-o e ajude-o a arrumá-lo.
+
+3 - Laís percebeu como as suas caixas eram ineficientes e pequenas, então decidiu comprar um armário de verdade. Esse armário possui três portas únicas e não ordenadas.
+
+Porta Roupa: possui 3 gavetas, uma embaixo da outra. A de cima (primeira) é a de partes de cima (dentro dela, os casacos são empilhados e, em cima deles, as blusas são empilhadas), a do meio é de partes de baixo (uma pilha de calças está ao lado de uma pilha de saias) e a de baixo, para vestidos (um ao lado do outro).
+
+Porta Calçado: possui duas gavetas, uma ao lado da outra, que divide os sapatos em duas partes, como nas caixas.
+
+Porta Acessórios: apenas uma gaveta, que guarda todos os acessórios.
+
+a) Implemente o armário e suas subdivisões usando Collections de Java.
+b) Escreva um método que procure o item desejado.
+c) Escreva um método que sugere um outfit aleatório, cada um contendo 1 item de cada porta do armário.
+
+4 - Agora que suas roupas já estão classificadas e organizadas dentro de seu armário, Laís deseja documentar a localização de cada item para que possa localizá-los com mais facilidade. Implemente essa documentação usando um Map de Java.
+
+5 - O inverno está chegando e Laís precisa se preparar para as temperaturas baixas. Para se planejar, ela vai precisar saber exatamente onde estão suas roupas para climas quentes e suas roupas para climas frios.
+
+a) Adicione a variável de adequação a um certo clima em sua implementação. Sinta-se livre para fazer isso do jeito que quiser, mas que torne a comparação entre objetos mais simples.
+b) Crie um método que "Ordene" o guarda-roupas de Laís, das roupas adequadas para climas mais frios até as roupas adequadas para climas mais quentes.
+
+Parte B: Operações de Entrada e Saída, Expressões Regulares
+
+Parte C: Design Patterns e UML
