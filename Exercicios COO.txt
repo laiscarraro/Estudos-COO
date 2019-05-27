@@ -65,4 +65,14 @@ b) Crie um método que "Ordene" o guarda-roupas de Laís, das roupas adequadas p
 
 Parte B: Operações de Entrada e Saída, Expressões Regulares
 
-Parte C: Design Patterns e UML
+Parte C: Design Patterns
+
+Implemente cada exercício usando um Design Pattern diferente. Explique qual é o funcionamento e a utilidade do padrão em questão.
+
+1- 
+2- 
+3- 
+4- O Governo do Brasil.
+5-
+6- 
+7- Os deuses gregos (pelo menos dois).
